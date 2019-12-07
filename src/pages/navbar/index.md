@@ -1,6 +1,12 @@
 ---
 templateKey: navbar
 menuItems:
+  - label: workshops
+    linkType: internal
+    linkURL: /workshops
+  - label: tutorials
+    linkType: internal
+    linkURL: /tutorials
   - label: attending
     linkType: internal
     linkURL: /attending

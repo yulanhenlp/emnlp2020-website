@@ -11,7 +11,7 @@ import StandardPageTemplate from "../components/StandardPageTemplate";
 
 const DefaultPage = ({ data }) => {
   const { markdownRemark: page, footerData, navbarData, site } = data;
-  const { organizers } = page.frontmatter;
+  const { organizers: _ } = page.frontmatter;
 
   return (
     <Layout footerData={footerData} navbarData={navbarData} site={site}>

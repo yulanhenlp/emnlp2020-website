@@ -1,10 +1,8 @@
 import React from "react";
 import "./styles.scss";
 
-export const FooterTemplate = ({ frontmatter, site }) => {
+export const FooterTemplate = ({ frontmatter, site: _ }) => {
   const { logoImage } = frontmatter;
-  const { sponsors } = site.siteMetadata;
-  const footerSponsorLevels = ["Platinum", "Gold"];
 
   return (
     <nav className="footer">
