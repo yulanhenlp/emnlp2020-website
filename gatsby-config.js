@@ -32,13 +32,6 @@ module.exports = {
         plugins: [],
       },
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/src/data`,
-        name: "data",
-      },
-    },
     "gatsby-transformer-csv",
     {
       resolve: "gatsby-plugin-google-analytics",
