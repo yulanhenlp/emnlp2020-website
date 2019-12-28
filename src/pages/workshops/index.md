@@ -1,5 +1,5 @@
 ---
-templateKey: default-page
+templateKey: all-workshops-page
 title: Workshops at EMNLP 2020
 seo:
   browserTitle: Workshops | EMNLP 2020
@@ -8,9 +8,4 @@ seo:
   title: Workshops | EMNLP 2020
 ---
 
-24 workshops to suit everyone's interests, including 
-* CoNLL
-* WMT
-* BlackboxNLP
-* Search-Oriented Conversational AI
-* And a range of new workshops to be confirmed soon
+EMNLP offers 24 workshops to suit a wide range of interests.
