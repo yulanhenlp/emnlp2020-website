@@ -36,5 +36,5 @@ The 2020 Conference on Empirical Methods in Natural Language Processing will be 
 * Author response period: July 8–14, 2020
 * Acceptance notification:  August 8
 * Camera-ready papers due: August 28, 2020
-* Main conference: November 8–12, 2020
-* Workshops and tutorials: November 13–14, 2020.
+* Main conference: November 8–10, 2020
+* Workshops and tutorials: November 11-12, 2020.
