@@ -108,7 +108,7 @@ Each EMNLP 2020 submission can be accompanied by one PDF appendix for the paper,
 
 ## Anonymity Period <span id="anonymity-period"></span>
 
-The following rules and guidelines are meant to protect the integrity of double-blind review and ensure that submissions are reviewed fairly. The rules make reference to the anonymity period, which runs from 1 month before the submission deadline (starting April 8th 2020) up to the date when your paper is accepted or rejected (Aug 8th 2020). Papers that are withdrawn during this period will no longer be subject to these rules.
+The following rules and guidelines are meant to protect the integrity of double-blind review and ensure that submissions are reviewed fairly. The rules make reference to the anonymity period, which runs from 1 month before the submission deadline (starting April 11th 2020) up to the date when your paper is accepted or rejected (Aug 8th 2020). Papers that are withdrawn during this period will no longer be subject to these rules.
 
 - You may not make a non-anonymized version of your paper available online to the general community (for example, via a preprint server) during the anonymity period. Versions of the paper include papers having essentially the same scientific content but possibly differing in minor details (including title and structure) and/or in length.
 
