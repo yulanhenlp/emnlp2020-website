@@ -31,8 +31,8 @@ seo:
 The 2020 Conference on Empirical Methods in Natural Language Processing will be held in the Dominican Republic.
 
 ### Key Dates
-* Anonymity period begins: April 8, 2020
-* Submissions due (long and short): May 8, 2020
+* Anonymity period begins: April 11, 2020
+* Submissions due (long and short): May 11, 2020
 * Author response period: July 8–14, 2020
 * Acceptance notification:  August 8
 * Camera-ready papers due: August 28, 2020
