@@ -8,7 +8,7 @@ seo:
 ---
 
 
-**Long and short paper submission deadline: May 8, 2020**
+**Long and short paper submission deadline: May 11, 2020**
 
 The 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP 2020) invites the submission of long and short papers on substantial, original, and unpublished research in empirical methods for Natural Language Processing. As in recent years, some of the presentations at the conference will be for papers accepted by the Transactions of the ACL (TACL) and Computational Linguistics (CL) journals.
 
