@@ -1,0 +1,28 @@
+.all-workshops {
+  max-width: 800px;
+}
+
+.role-listing {
+  h3 {
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+  }
+
+  margin-bottom: 1rem;
+
+  .member-name {
+    font-weight: 500;
+  }
+
+  .member {
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+  }
+}
+
+.all-committee-organizers {
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}

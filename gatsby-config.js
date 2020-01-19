@@ -40,11 +40,10 @@ module.exports = {
       },
     },
     "gatsby-transformer-csv",
+    "gatsby-transformer-yaml",
     {
       resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "UA-154137477-1",
-      }
+      options: {}
     },
     {
       resolve: `gatsby-plugin-favicon`,
