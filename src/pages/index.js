@@ -28,7 +28,6 @@ const NewsSection = ({items}) => (
   </div>
 )
 
-
 const SponsorImageLink = (props) => (
   <img className="sponsor-image" src={`/sponsors/${props.sponsor.image}`} alt={props.sponsor.longName} />
 )
@@ -75,8 +74,25 @@ const SponsorListing = (props) => {
   );
 }
 
-export const HomePageTemplate = ({ home, sponsors }) => {
+const KeyDateListing = ({ date, event }) => (
+  <tr className="key-date-info">
+    <td className="key-date-text">{date}</td><td className="key-date-entry">{event}</td>
+  </tr>
+);
 
+const KeyDates = ({ items: dates }) => (
+  <div className="key-dates-section-wrapper">
+    <section className="key-dates-section">
+      <h4>Key Dates</h4>
+      <table className="key-date-table">
+        {dates.filter(d => d.important).map(d => <KeyDateListing {...d}/>)}
+      </table>
+      <p className="extra-date-info">See the <a href="/call-for-papers">call for papers</a> for further important details about the submission process</p>
+    </section>
+  </div>
+);
+
+export const HomePageTemplate = ({ home, sponsors }) => {
   return (
     <>
       <section className="header">
@@ -96,6 +112,7 @@ export const HomePageTemplate = ({ home, sponsors }) => {
         </div>
       </section>
       <NewsSection items={home.newsItems}/>
+      <KeyDates items={home.keyDates}/>
       <section className="sponsors">
         <SponsorListing sponsors={sponsors} />
       </section>
@@ -152,6 +169,11 @@ export const pageQuery = graphql`
             newsItems {
               date(formatString: "YYYY-MM-DD")
               text
+            }
+            keyDates {
+              date(formatString: "MMMM D, YYYY")
+              event
+              important
             }
           }
         }

@@ -18,7 +18,16 @@ newsItems:
     text: "The [call for papers](/call-for-papers) is available"
   - date: 2019-12-28
     text: "The [workshops listing](/workshops) now provides details of all 24 workshops"
-  - date: 2019-12-28
-    text: "[Key dates](/about) have now been updated"
-  - date: 2019-12-06
-    text: The official dates for EMNLP 2020 have been announced
+keyDates:
+  - date: 2020-05-11
+    event: Submission deadline (long and short papers)
+    important: true
+  - date: 2020-08-08
+    event: Notification of acceptance (long & short papers
+    important: true
+  - date: 2020-11-08
+    event: Main conference begins
+    important: true
+  - date: 2020-11-11
+    event: Workshops and tutorials
+    important: true

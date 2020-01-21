@@ -13,9 +13,9 @@ menuItems:
   - label: attending
     linkType: internal
     linkURL: /attending
-  - label: about
+  - label: organizers
     linkType: internal
-    linkURL: /about
+    linkURL: /organizers
   - label: home
     longLabel: Landing Page
     linkType: internal
