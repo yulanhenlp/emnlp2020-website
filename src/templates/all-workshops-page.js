@@ -6,18 +6,18 @@ import Layout from "../components/Layout";
 import HTMLContent from "../components/Content";
 import PageHelmet from "../components/PageHelmet";
 import StandardPageTemplate from "../components/StandardPageTemplate";
-import "../styles/all-workshops-page.scss";
+import "../styles/all-events-page.scss";
 
 const WorkshopListing = ({ title, summary, authors, url }) => (
-  <article className="workshop-listing">
+  <article className="event-listing">
     <h3><a href={url}>{title}</a></h3>
-    <div className="workshop-organizers">{authors}</div>
-    <p className="workshop-summary">{summary}</p>
+    <div className="event-organizers">{authors}</div>
+    <p className="event-summary">{summary}</p>
   </article>
 );
 
 const AllWorkshops = ({ workshops }) => (
-  <section className="all-workshops">
+  <section className="all-events">
     {workshops.map(w => <WorkshopListing {...w} key={w.workshopNumber} />)}
   </section>
 );
