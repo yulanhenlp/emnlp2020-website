@@ -22,7 +22,7 @@ const NewsSection = ({items}) => (
     <div className="news-section">
       <h4>Latest News</h4>
       <ul className="news-section-list">
-        {items.map(i => <NewsItem item={i}></NewsItem>)}
+        {items.map(i => <NewsItem item={i} key={i.text}></NewsItem>)}
       </ul>
     </div>
   </div>
@@ -85,7 +85,9 @@ const KeyDates = ({ items: dates }) => (
     <section className="key-dates-section">
       <h4>Key Dates</h4>
       <table className="key-date-table">
-        {dates.filter(d => d.important).map(d => <KeyDateListing {...d}/>)}
+        <tbody>
+          {dates.filter(d => d.important).map(d => <KeyDateListing {...d} key={d.event}/>)}
+        </tbody>
       </table>
       <p className="extra-date-info">See the <a href="/call-for-papers">call for papers</a> for further important details about the submission process</p>
     </section>
