@@ -10,10 +10,6 @@
     organization: University of Warwick, UK
   - name: Yang Liu
     organization: Amazon – Alexa AI, USA
-- title: Local Organizer
-  members:
-  - name: Priscilla Rasmussen
-    organization: Association for Computational Linguistics, USA
 - title: Workshop Chairs
   members:
   - name: Lonneke van der Plas
@@ -32,6 +28,8 @@
     organization: Huawei Noah's Ark Lab, Hong Kong
   - name: David Schlangen
     organization: University of Potsdam, Germany
+- title: General Publication Chair
+  members:
   - name: Fei Liu
     organization: University of Central Florida, USA
 - title: Publication Chair
@@ -48,21 +46,23 @@
   members:
   - name: Andy MacKinlay
     organization: Culture Amp, Australia
-- title: Student Volunteer Coordinator & Student Scholarship Chairs
+- title: Student Volunteer Coordinator & Student Scholarship Chair
   members:
   - name: Kellie Webster
     organization: Google, USA
+- title: Diversity & Inclusion Chairs
+  members:
   - name: Isabelle Augenstein
     organization: University of Copenhagen
   - name: Chris Brew
     organization: FaceBook, USA
-- title: Diversity & Inclusion Chairs
+- title: Diversity & Inclusion Student Chairs
   members:
   - name: Murathan Kurfali
     organization: University of Stockholm
   - name: Prathyusha Jwalapuram
-    organization: Facebook, USA
-- title: ACL Business Manager
+    organization: Nanyang Technological University, Singapore
+- title: ACL Business Manager & Local Arrangements Chair
   members:
   - name: Priscilla Rasmussen
     organization: Association for Computational Linguistics, USA
