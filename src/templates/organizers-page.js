@@ -7,36 +7,37 @@ import HTMLContent from "../components/Content";
 import PageHelmet from "../components/PageHelmet";
 import StandardPageTemplate from "../components/StandardPageTemplate";
 import "../styles/organizers-page.scss";
+import Img from "gatsby-image";
 
 // const imagePathForName = (name) => `people/org-committee/${imageStem(name)}`;
 
 const imageStem = (name) => `${name.toLowerCase().replace(/ /g, '_')}`;
 
-const MemberPhoto = ({ src, name }) => (
+const MemberPhoto = ({ sharpImageData, name }) => (
   <div className="member-photo-wrapper">
-    <img className="member-photo" src={src} alt={name}></img>
+    <Img fixed={sharpImageData.fixed} alt={name} />
   </div>
-)
+);
 
 const PlaceholderPhoto = () => (
   <div className="member-photo-wrapper placeholder"></div>
-)
+);
 
-const MemberListing = ({ name, organization, imageUrl }) => (
+const MemberListing = ({ name, organization, sharpImageData }) => (
   <article className="member">
-    {imageUrl ? <MemberPhoto src={imageUrl} name={name}/> : <PlaceholderPhoto />}
+    {sharpImageData ? <MemberPhoto sharpImageData={sharpImageData} name={name}/> : <PlaceholderPhoto />}
     <div className="member-text-details">
       <div className="member-name">{name}</div>
       <div className="member-org">{organization}</div>
     </div>
   </article>
-)
+);
 
 const RoleListing = ({ title, members, images }) => (
   <section className="role-listing">
     <h3 className="role-title">{title}</h3>
     <div className="role-listing-members">
-      {members.map(m => <MemberListing {...m} imageUrl={images.get(imageStem(m.name))} key={m.name}/>)}
+      {members.map(m => <MemberListing {...m} sharpImageData={images.get(imageStem(m.name))} key={m.name}/>)}
     </div>
   </section>
 );
@@ -51,7 +52,7 @@ const OrgCommitteePage = ({ data }) => {
   const { markdownRemark: page, footerData, navbarData, site, committee, committeeImages } = data;
   const { roles } = committee;
   const { images } = committeeImages;
-  const imagesByName = new Map(images.map(({ name, publicURL }) => [name, publicURL]));
+  const imagesByName = new Map(images.map(({ name, sharpImageData }) => [name, sharpImageData]));
 
   return (
     <Layout footerData={footerData} navbarData={navbarData} site={site}>
@@ -95,7 +96,11 @@ export const organizersPageQuery = graphql`
     committeeImages: allFile(filter: {relativeDirectory: {eq: "org-committee"}, sourceInstanceName: {eq: "images"}}) {
       images: nodes {
         name
-        publicURL
+        sharpImageData: childImageSharp {
+          fixed(height: 100) {
+            ...GatsbyImageSharpFixed
+          }
+        }
       }
     }
     ...LayoutFragment
