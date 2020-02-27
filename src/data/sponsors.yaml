@@ -1,0 +1,10 @@
+- levelName: Diamond
+  sponsors: 
+    - name: Bloomberg Engineering
+- levelName: Platinum
+  sponsors:
+    - name: Baidu
+    - name: Megagon Labs
+- levelName: Bronze
+  sponsors:
+    - name: ISI
