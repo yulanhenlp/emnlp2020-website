@@ -16,6 +16,9 @@ menuItems:
   - label: organizers
     linkType: internal
     linkURL: /organizers
+  - label: sponsors
+    linkType: internal
+    linkURL: /sponsors
   - label: home
     longLabel: Landing Page
     linkType: internal
