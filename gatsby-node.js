@@ -2,8 +2,12 @@ const _ = require("lodash");
 const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
 
+const redirects = [
+  {fromPath: '/templates', toPath: '/files/emnlp2020-templates.zip'}
+]
+
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions;
+  const { createPage, createRedirect } = actions;
 
   return graphql(`
     {
@@ -26,6 +30,8 @@ exports.createPages = ({ actions, graphql }) => {
       result.errors.forEach(e => console.error(e.toString()));
       return Promise.reject(result.errors);
     }
+
+    redirects.forEach(r => createRedirect(r));
 
     // Filter out the footer, navbar, and meetups so we don't create pages for those
     const postOrPage = result.data.allMarkdownRemark.edges.filter(edge => {
