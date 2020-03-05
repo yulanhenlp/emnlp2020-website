@@ -9,7 +9,7 @@ seo:
 
 
 * **Long and short paper submission deadline: May 11, 2020**
-* **[Templates and styles files for papers](/static/files/emnlp2020-templates.zip) are available for download**
+* **[Templates and styles files for papers](/files/emnlp2020-templates.zip) are available for download**
 
 ## Overview
 
