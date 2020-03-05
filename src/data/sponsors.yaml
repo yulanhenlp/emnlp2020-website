@@ -1,10 +1,14 @@
 - levelName: Diamond
   sponsors: 
     - name: Bloomberg Engineering
+      link: https://www.bloomberg.com/company/engineering/
 - levelName: Platinum
   sponsors:
     - name: Baidu
+      link: https://baidu.com
     - name: Megagon Labs
+      link: https://megagon.ai
 - levelName: Bronze
   sponsors:
     - name: ISI
+      link: https://www.isi.edu/
