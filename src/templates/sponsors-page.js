@@ -19,17 +19,19 @@ const SponsorLogo = ({ sharpImageData, name }) => (
   </div>
 );
 
-const SponsorListing = ({ name, sharpImageData }) => (
-  <article className="sponsor">
-    <SponsorLogo sharpImageData={sharpImageData} name={name}/>
-  </article>
+const SponsorListing = ({ name, sharpImageData, link }) => (
+  <a href={link}>
+    <article className="sponsor">
+      <SponsorLogo sharpImageData={sharpImageData} name={name} />
+    </article>
+  </a>
 );
 
 const LevelListing = ({ levelName, sponsors, images }) => (
   <section className="level-listing">
     <h3 className="level-name">{levelName}</h3>
     <div className="level-listing-sponsors">
-      {sponsors.map(s => <SponsorListing {...s} sharpImageData={images.get(imageStem(s.name))} key={s.name}/>)}
+      {sponsors.map(s => <SponsorListing {...s} sharpImageData={images.get(imageStem(s.name))} key={s.name} />)}
     </div>
   </section>
 );
@@ -51,7 +53,7 @@ const SponsorsPage = ({ data }) => {
       <PageHelmet page={page} />
       <StandardPageTemplate page={{ ...page }}>
         <HTMLContent className="default-content" content={page.html} />
-        <CategorySponsorListing levels={levels} images={imagesByName}/>
+        <CategorySponsorListing levels={levels} images={imagesByName} />
       </StandardPageTemplate>
     </Layout>
   );
@@ -81,6 +83,7 @@ export const sponsorsPageQuery = graphql`
         levelName
         sponsors {
           name
+          link
         }  
       }
     }
