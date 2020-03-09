@@ -10,6 +10,7 @@ seo:
 
 * **Long and short paper submission deadline: May 11, 2020**
 * **[Templates and styles files for papers](/files/emnlp2020-templates.zip) are available for download**
+* **Authors can [submit their papers](https://www.softconf.com/emnlp2020/papers) using Softconf**
 
 ## Overview
 
@@ -98,18 +99,26 @@ For more information, see the [ACL Policies for Submission, Review, and Citation
 
 EMNLP 2020 will not consider any paper that is under review in a journal or another conference at the time of submission, and submitted papers must not be submitted elsewhere during the EMNLP 2020 review period. This policy covers all refereed and archival conferences and workshops (e.g., COLING, NeurIPS, ACL workshops). For example, a paper under review at an ACL workshop cannot be dual-submitted to EMNLP 2020. In addition, we will not consider any paper that overlaps significantly in content or results with papers that will be (or have been) published elsewhere. Authors submitting more than one paper to EMNLP 2020 must ensure that their submissions do not overlap significantly (>25%) with each other in content or results.
 
+<span id="new-ethics-policy"></span>
 
-### Paper Submission and Templates
+### NEW: Ethics Policy 
 
-Submission is electronic, using the Softconf START conference management system. Paper template files will be provided soon on the conference website. 
+Authors are required to honour the ethical code set out in the [ACM Code of Ethics](https://www.acm.org/code-of-ethics). The consideration of the ethical impact of our research, use of data, and potential applications of our work has always been an important consideration, and as artificial intelligence is becoming more mainstream, these issues are increasingly pertinent. We ask that all authors read the code, and ensure that their work is conformant to this code. Where a paper may raise ethical issues, we ask that you include in the paper an explicit discussion of these issues, which will be taken into account in the review process. We reserve the right to reject papers on ethical grounds, where the authors are judged to have operated counter to the code of ethics, or have inadequately addressed legitimate ethical concerns with their work
 
+<span id="paper-submission-and-templates"></span>
+
+### Paper Submission and Templates 
+
+Submission is electronic, using the [Softconf START conference management system](https://www.softconf.com/emnlp2020/papers). Both long and short papers must follow the EMNLP 2020 two-column format, using the [supplied official style sheets](/files/emnlp2020-templates.zip). **Please do not modify these style files, nor should you use templates designed for other conferences. Submissions that do not conform to the required styles, including paper size, margin width, and font size restrictions, will be rejected without review.**
 
 ### Optional Supplementary Materials: Appendices, Software and Data
 
 Each EMNLP 2020 submission can be accompanied by one PDF appendix for the paper, one PDF for prior reviews and author response, one .tgz or .zip archive containing software, and one.tgz or .zip archive containing data. EMNLP 2020 encourages the submission of these supplementary materials to improve the reproducibility of results, and to enable authors to provide additional information that does not fit in the paper. For example, anonymised related work (see above), preprocessing decisions, model parameters, feature templates, lengthy proofs or derivations, pseudocode, sample system inputs/outputs, and other details that are necessary for the exact replication of the work described in the paper can be put into the appendix. However, the paper submissions need to remain fully self-contained, as these supplementary materials are completely optional, and reviewers are not even asked to review or download them. If the pseudo-code or derivations or model specifications are an important part of the contribution, or if they are important for the reviewers to assess the technical correctness of the work, they should be a part of the main paper, and not appear in the appendix. Supplementary materials need to be fully anonymized to preserve the double-blind reviewing policy.
 
 
-## Anonymity Period <span id="anonymity-period"></span>
+<span id="anonymity-period"></span>
+
+## Anonymity Period 
 
 The following rules and guidelines are meant to protect the integrity of double-blind review and ensure that submissions are reviewed fairly. The rules make reference to the anonymity period, which runs from 1 month before the submission deadline (starting April 11th 2020) up to the date when your paper is accepted or rejected (Aug 8th 2020). Papers that are withdrawn during this period will no longer be subject to these rules.
 
@@ -168,6 +177,7 @@ For all datasets used:
 * `[ ]` For new data collected, a complete description of the data collection process, such as instructions to annotators and methods for quality control.
 
 Thanks to Jesse Dodge for helping with the above checklist. It is based on [Dodge et al, 2019](https://arxiv.org/pdf/1909.03004.pdf) and [Joelle Pineau's reproducibility checklist](https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf)
+
 
 
 ## Presentation Requirement

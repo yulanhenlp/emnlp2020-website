@@ -14,6 +14,8 @@ seo:
     The 2020 Conference on Empirical Methods in Natural Language Processing
   title: EMNLP 2020
 newsItems:
+  - date: 2020-03-10
+    text: The call for papers has a [ethics policy](/call-for-papers#new-ethics-policy) and updated [submission guidelines](/call-for-papers#paper-submission-and-templates) 
   - date: 2020-03-05
     text: "[Templates and styles files for papers](/files/emnlp2020-templates.zip) are available for download"
   - date: 2020-01-13
