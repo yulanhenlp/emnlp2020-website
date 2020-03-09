@@ -2,41 +2,10 @@
 @import "./mixins.scss";
 
 .header {
-  height: 400px;
-  background-color: $background-light;
-
-  @include respond-to("medium") {
-    height: 500px;
-  }
-
   &-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-
-    @include respond-to("small") {
-      flex-direction: row;
-      justify-content: space-around;
-    }
-  }
-
-  &-image {
-    height: 150px;
-    margin-bottom: 30px;
-    margin-right: 20px;
-
-    @include respond-to("small") {
-      height: 200px;
-      margin-bottom: 0;
-    }
-
-    @include respond-to("medium") {
-      height: 300px;
-    }
+    background-image: url(/img/jumbotron_banner.jpeg);
+    background-position: center;
+    background-size: cover;
   }
 
   &-text {
