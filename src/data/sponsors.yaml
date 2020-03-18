@@ -10,6 +10,10 @@
       link: https://baidu.com
     - name: Megagon Labs
       link: https://megagon.ai
+- levelName: Silver
+  sponsors:
+    - name: Babelscape
+      link: https://babelscape.com/
 - levelName: Bronze
   sponsors:
     - name: ISI
