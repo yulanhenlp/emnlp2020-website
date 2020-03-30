@@ -6,6 +6,6 @@ logoImage:
   orgLink: https://www.aclweb.org
   taglines:
     - EMNLP 2020
-    - 8th – 12th November, Punta Cana, Dominican Republic
+    - "8th – 12th November | Dominican Republic (TBC)"
 ---
 

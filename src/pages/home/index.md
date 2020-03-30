@@ -7,13 +7,15 @@ title: EMNLP 2020
 description: The 2020 Conference on Empirical Methods in Natural Language Processing
 extraInfo: 
   - 8th – 12th November 2020
-  - Barceló Bávaro Convention Centre, Punta Cana, Dominican Republic
+  - Barceló Bávaro Convention Centre, Punta Cana, Dominican Republic (TBC)
 seo:
   browserTitle: EMNLP 2020
   description: >-
     The 2020 Conference on Empirical Methods in Natural Language Processing
   title: EMNLP 2020
 newsItems:
+  - date: 2020-03-30
+    text: In view of the COVID-19 situation, [there is a good chance that EMNLP2020 may be run purely online](/attending#covid-online). 
   - date: 2020-03-10
     text: The call for papers has a [ethics policy](/call-for-papers#new-ethics-policy) and updated [submission guidelines](/call-for-papers#paper-submission-and-templates) 
   - date: 2020-03-05

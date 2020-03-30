@@ -28,7 +28,7 @@ seo:
   description: 
   title: About | EMNLP 2020
 ---
-The 2020 Conference on Empirical Methods in Natural Language Processing will be held in the Dominican Republic.
+The 2020 Conference on Empirical Methods in Natural Language Processing will likely be held in the Dominican Republic.
 
 ### Key Dates
 * Anonymity period begins: April 11, 2020
