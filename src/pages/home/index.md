@@ -1,8 +1,5 @@
 ---
 templateKey: home-page
-headerImage:
-  image: /img/barcelo-bavaro-1.png
-  imageAlt: Barceló Bávaro Convention Centre
 title: EMNLP 2020
 description: The 2020 Conference on Empirical Methods in Natural Language Processing
 extraInfo: 

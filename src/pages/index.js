@@ -161,10 +161,6 @@ export const pageQuery = graphql`
             title
             description
             extraInfo
-            headerImage {
-              image
-              imageAlt
-            }
             seo {
               browserTitle
               title

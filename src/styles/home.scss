@@ -2,21 +2,11 @@
 @import "./mixins.scss";
 
 .header {
-  height: 400px;
   background-color: $background-light;
 
-  @include respond-to("medium") {
-    height: 500px;
-  }
-
   &-container {
-    display: flex;
     flex-direction: column;
     height: 100%;
-    align-items: center;
-    justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
 
     @include respond-to("small") {
       flex-direction: row;
@@ -40,24 +30,22 @@
   }
 
   &-text {
-    display: flex;
-    flex-direction: column;
     color: $body-dark;
+    background-color: white;
+    width: 80%;
+    padding: 20px;
+    margin: 40px auto;
 
     @include respond-to("small") {
-      flex-basis: 430px;
       text-align: left;
-      width: 50%;
       align-items: flex-start;
     }
 
-    @include respond-to("medium") {
-      flex-basis: 500px;
-    }
   }
 
   &-name {
     @include xlarge-font();
+    font-weight: bold;
   }
 
   &-extra-info {
@@ -69,7 +57,6 @@
   &-tagline {
     @include large-font();
     margin-top: 1rem;
-    width: 400px;
   }
 }
 
@@ -103,6 +90,9 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .date {
@@ -122,10 +112,6 @@ table.key-date-table {
 }
 
 .key-date-info, .news-section {
-  td.date {
-    padding-right: 0.8rem;
-  
-  }
 
   td {
     padding: 2px;
