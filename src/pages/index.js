@@ -11,20 +11,22 @@ import "../styles/home.scss";
 const sponsorLevels = ["Platinum", "Gold", "Silver", "Bronze"];
 
 const NewsItem = ({item}) => (
-  <li className="news-item">
-    <span className="news-date">{item.date}</span>
-    <ReactMarkdown className="news-text" source={item.text}/>
-  </li>
+  <tr className="news-item">
+    <td className="date">{item.date}</td>
+    <td><ReactMarkdown className="news-text" source={item.text}/></td>
+  </tr>
 )
 
 const NewsSection = ({items}) => (
   <div className="news-section-wrapper">
-    <div className="news-section">
+    <section className="news-section">
       <h4>Latest News</h4>
-      <ul className="news-section-list">
-        {items.map(i => <NewsItem item={i} key={i.text}></NewsItem>)}
-      </ul>
-    </div>
+      <table className="news-section-list">
+        <tbody>
+          {items.map(i => <NewsItem item={i} key={i.text}></NewsItem>)}
+        </tbody>
+      </table>
+    </section>
   </div>
 )
 
@@ -76,7 +78,7 @@ const SponsorListing = (props) => {
 
 const KeyDateListing = ({ date, event }) => (
   <tr className="key-date-info">
-    <td className="key-date-text">{date}</td><td className="key-date-entry">{event}</td>
+    <td className="date">{date}</td><td className="key-date-entry">{event}</td>
   </tr>
 );
 
@@ -169,11 +171,11 @@ export const pageQuery = graphql`
               description
             }
             newsItems {
-              date(formatString: "YYYY-MM-DD")
+              date(formatString: "MMMM Do, YYYY")
               text
             }
             keyDates {
-              date(formatString: "MMMM D, YYYY")
+              date(formatString: "MMMM Do, YYYY")
               event
               important
             }

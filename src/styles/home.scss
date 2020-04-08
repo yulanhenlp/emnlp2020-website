@@ -105,14 +105,10 @@
   }
 }
 
-.news-date, .key-date-text {
+.date {
   margin-right: 1rem;
   font-weight: bold;
-}
-
-.news-item, .key-date-item {
-  display: flex;
-  margin-bottom: 0.2rem;
+  white-space: nowrap;
 }
 
 .extra-date-info {
@@ -125,10 +121,10 @@ table.key-date-table {
   margin-bottom: 1rem;
 }
 
-.key-date-info {
-  
-  td.key-date-text {
+.key-date-info, .news-section {
+  td.date {
     padding-right: 0.8rem;
+  
   }
 
   td {
