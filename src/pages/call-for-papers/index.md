@@ -8,7 +8,7 @@ seo:
 ---
 
 
-* **Long and short paper submission deadline: May 11, 2020**
+* **Long and short paper submission deadline: June 1, 2020**
 * **[Templates and styles files for papers](/files/emnlp2020-templates.zip) are available for download**
 * **Authors can [submit their papers](https://www.softconf.com/emnlp2020/papers) using Softconf**
 
@@ -19,13 +19,13 @@ The 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP 2
 
 ## Important Dates
 
-- [Anonymity period](#anonymity-period) begins: April 11, 2020
-- Submission deadline (long & short papers): May 11, 2020
-- Author response period: July 8-14, 2020
-- Notification of acceptance (long & short papers): August 8, 2020
-- Camera-ready papers due (long & short papers): August 28, 2020
-- Main conference: November 8-10, 2020
-- Workshops and tutorials: November 11-12, 2020
+- [Anonymity period](#anonymity-period) begins: May 1, 2020
+- Submission deadline (long & short papers): June 1, 2020
+- Author response period: August 7-13, 2020
+- Notification of acceptance (long & short papers): September 14, 2020
+- Camera-ready papers due (long & short papers): October 5, 2020
+- Main conference: November 16-18, 2020
+- Workshops and tutorials: November 19-20, 2020
 
 **All deadlines are 11.59 pm UTC -12h ("anywhere on Earth").**
 
@@ -120,7 +120,7 @@ Each EMNLP 2020 submission can be accompanied by one PDF appendix for the paper,
 
 ## Anonymity Period 
 
-The following rules and guidelines are meant to protect the integrity of double-blind review and ensure that submissions are reviewed fairly. The rules make reference to the anonymity period, which runs from 1 month before the submission deadline (starting April 11th 2020) up to the date when your paper is accepted or rejected (Aug 8th 2020). Papers that are withdrawn during this period will no longer be subject to these rules.
+The following rules and guidelines are meant to protect the integrity of double-blind review and ensure that submissions are reviewed fairly. The rules make reference to the anonymity period, which runs from 1 month before the submission deadline (starting May 1st, 2020) up to the date when your paper is accepted or rejected (September 14th, 2020). Papers that are withdrawn during this period will no longer be subject to these rules.
 
 - You may not make a non-anonymized version of your paper available online to the general community (for example, via a preprint server) during the anonymity period. Versions of the paper include papers having essentially the same scientific content but possibly differing in minor details (including title and structure) and/or in length.
 
