@@ -48,6 +48,7 @@
   &-name {
     @include xlarge-font();
     font-weight: bold;
+    color: slategray;
   }
 
   &-extra-info {
@@ -116,6 +117,6 @@ table.key-date-table {
 .key-date-info, .news-section {
 
   td {
-    padding: 2px;
+    padding: 2px 4px;
   }
 }
