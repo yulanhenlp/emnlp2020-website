@@ -76,9 +76,13 @@ const SponsorListing = (props) => {
   );
 }
 
-const KeyDateListing = ({ date, event }) => (
+const KeyDateListing = ({ date, event, formerly }) => (
   <tr className="key-date-info">
-    <td className="date">{date}</td><td className="key-date-entry">{event}</td>
+    <td className="date">{date}</td>
+    <td className="key-date-entry">
+      {event}
+      { formerly ? <span className="key-date-formerly"> (was: {formerly})</span>: null }
+    </td>
   </tr>
 );
 
@@ -91,7 +95,10 @@ const KeyDates = ({ items: dates }) => (
           {dates.filter(d => d.important).map(d => <KeyDateListing {...d} key={d.event}/>)}
         </tbody>
       </table>
-      <p className="extra-date-info">See the <a href="/call-for-papers">call for papers</a> for further important details about the submission process</p>
+      <span className="extra-date-info">
+        <p><strong>Updated April 8th, 2020</strong> – the above dates have all been updated to reflect the new scheduled dates EMNLP in its online format.</p>
+        <p>See the <a href="/call-for-papers">call for papers</a> for further important details about the submission process</p>
+      </span>
     </section>
   </div>
 );
@@ -174,6 +181,7 @@ export const pageQuery = graphql`
               date(formatString: "MMMM Do, YYYY")
               event
               important
+              formerly(formatString: "MMMM Do")
             }
           }
         }

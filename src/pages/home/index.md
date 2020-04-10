@@ -28,12 +28,14 @@ keyDates:
   - date: 2020-06-01
     event: Submission deadline (long and short papers)
     important: true
+    formerly: 2020-05-11
   - date: 2020-09-14
     event: Notification of acceptance (long & short papers)
     important: true
   - date: 2020-11-16
     event: Main conference begins
     important: true
+    formerly: 2020-11-08
   - date: 2020-11-19
     event: Workshops and tutorials
     important: true
