@@ -6,6 +6,7 @@
   @include medium-font;
   color: $body-dark;
   padding: 40px 20px;
+  height: $footer-height;
 
   @include respond-to("small") {
     padding: 20px 20px;

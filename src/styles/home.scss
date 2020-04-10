@@ -3,6 +3,7 @@
 
 .header {
   background-color: $background-light;
+  padding: 50px 30px;
 
   &-container {
     flex-direction: column;
@@ -34,7 +35,7 @@
     background-color: white;
     width: 80%;
     padding: 20px;
-    margin: 40px auto;
+    margin: 0px auto;
 
     @include respond-to("small") {
       text-align: left;
