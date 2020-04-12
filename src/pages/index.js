@@ -112,7 +112,7 @@ export const HomePageTemplate = ({ home, sponsors }) => {
           {home.headerImage && 
             <img className="header-image" src={home.headerImage.image} alt={home.headerImage.imageAlt} />
           }
-          <div className="header-text">
+          <div className="header-text" title="Image Credit: NASA">
             <h3 className="header-name">{home.title}</h3>
             <h4 className="header-tagline">
               <HTMLContent className="header-taglinePart" content={home.description}/>
