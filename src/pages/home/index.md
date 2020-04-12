@@ -1,7 +1,7 @@
 ---
 templateKey: home-page
 title: EMNLP 2020
-description: The 2020 Conference on Empirical Methods in Natural Language Processing
+description: '<span class="avoid-breaks">The 2020 Conference</span> <span class="avoid-breaks">on Empirical Methods</span> <span class="avoid-breaks">in Natural Language Processing</span>'
 extraInfo: 
   - 16th – 20th November 2020
 seo:

@@ -7,6 +7,7 @@ import "../styles/sponsors-page.scss";
 
 import Layout from "../components/Layout";
 import "../styles/home.scss";
+import HTMLContent from "../components/Content";
 
 const sponsorLevels = ["Platinum", "Gold", "Silver", "Bronze"];
 
@@ -114,7 +115,7 @@ export const HomePageTemplate = ({ home, sponsors }) => {
           <div className="header-text">
             <h3 className="header-name">{home.title}</h3>
             <h4 className="header-tagline">
-              <span className="header-taglinePart">{home.description}</span>
+              <HTMLContent className="header-taglinePart" content={home.description}/>
             </h4>
             <div className="header-extra-info">
               {home.extraInfo.map((ei, idx) => <p key={idx}>{ei}</p>)}

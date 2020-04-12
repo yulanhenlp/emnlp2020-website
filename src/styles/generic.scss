@@ -39,6 +39,12 @@ a {
   }
 }
 
+.avoid-breaks {
+  @include respond-to("small") {
+    white-space: nowrap;
+  }
+}
+
 main {
   min-height: calc(100vh - #{$navbar-height + $footer-height});
   
