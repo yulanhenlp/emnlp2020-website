@@ -52,6 +52,7 @@ $photo-height: 100px;
   &-members {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
