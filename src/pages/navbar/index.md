@@ -1,6 +1,9 @@
 ---
 templateKey: navbar
 menuItems:
+  - label: blog
+    linkType: internal
+    linkURL: /blog
   - label: call for papers
     linkType: internal
     linkURL: /call-for-papers

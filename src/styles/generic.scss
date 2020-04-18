@@ -31,6 +31,10 @@ a {
   margin: auto;
 }
 
+.about-container {
+  max-width: $page-content-width;
+}
+
 .section {
   padding: $section-padding-mobile 0;
 
