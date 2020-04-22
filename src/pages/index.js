@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 import PageHelmet from "../components/PageHelmet";
 import ReactMarkdown from "react-markdown";
 import "../styles/sponsors-page.scss";
+import { Link } from "gatsby";
 
 import Layout from "../components/Layout";
 import "../styles/home.scss";
@@ -11,20 +12,40 @@ import HTMLContent from "../components/Content";
 
 const sponsorLevels = ["Platinum", "Gold", "Silver", "Bronze"];
 
-const NewsItem = ({item}) => (
+const NewsItem = ({ date, text }) => (
   <tr className="news-item">
-    <td className="date">{item.date}</td>
-    <td><ReactMarkdown className="news-text" source={item.text}/></td>
+    <td className="date">{date}</td>
+    <td><ReactMarkdown className="news-text" source={text}/></td>
   </tr>
 )
 
-const NewsSection = ({items}) => (
-  <div className="news-section-wrapper">
-    <section className="news-section">
+const BlogPostSummary = ({ date, title, link }) => (
+  <tr className="blog-item">
+    <td className="date">{date}</td>
+    <td className="blog-text"><Link to={link}>{title}</Link></td>
+  </tr>
+)
+
+const BlogPosts = ({ items }) => (
+  <div className="blog-post-list-wrapper updates-section-wrapper">
+    <section className="blog-post-list-section single-updates-section">
+      <h4>Latest Blog Posts</h4>
+      <table className="blog-section-list">
+        <tbody>
+          {items.map(i => <BlogPostSummary {...i} key={i.text}></BlogPostSummary>)}
+        </tbody>
+      </table>
+    </section>
+  </div>
+)
+
+const NewsSection = ({ items }) => (
+  <div className="news-section-wrapper updates-section-wrapper">
+    <section className="news-section single-updates-section">
       <h4>Latest News</h4>
       <table className="news-section-list">
         <tbody>
-          {items.map(i => <NewsItem item={i} key={i.text}></NewsItem>)}
+          {items.map(i => <NewsItem {...i} key={i.text}/>)}
         </tbody>
       </table>
     </section>
@@ -59,7 +80,8 @@ const KeyDates = ({ items: dates }) => (
   </div>
 );
 
-export const HomePageTemplate = ({ home }) => {
+
+export const HomePageTemplate = ({ home, blogPosts }) => {
   return (
     <>
       <section className="header">
@@ -78,8 +100,13 @@ export const HomePageTemplate = ({ home }) => {
           </div>
         </div>
       </section>
-      <NewsSection items={home.newsItems}/>
-      <KeyDates items={home.keyDates}/>
+      <main className="key-info-content">
+        <div className="updates-section">
+          <BlogPosts items={blogPosts}/>
+          <NewsSection items={home.newsItems}/>
+        </div>
+        <KeyDates items={home.keyDates}/>
+      </main>
      </>
   );
 };
@@ -91,10 +118,17 @@ class HomePage extends React.Component {
       data: { footerData, navbarData, site },
     } = this.props;
     const { frontmatter: home } = data.homePageData.edges[0].node;
+    const blogPosts = data.blogPostData.edges.map(({ node }) => 
+      ({
+        link: node.fields.slug,
+        title: node.frontmatter.title,
+        date: node.frontmatter.date
+      })
+    );
     return (
       <Layout footerData={footerData} navbarData={navbarData} site={site}>
         <PageHelmet page={{frontmatter: home}} />
-        <HomePageTemplate home={home} />
+        <HomePageTemplate home={home} blogPosts={blogPosts} />
       </Layout>
     );
   }
@@ -137,6 +171,19 @@ export const pageQuery = graphql`
               important
               formerly(formatString: "MMMM Do")
             }
+          }
+        }
+      }
+    }
+    blogPostData: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "blog-post-page"}}}, sort: {fields: frontmatter___date, order: DESC}) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            date(formatString:"MMMM Do, YYYY")
           }
         }
       }
