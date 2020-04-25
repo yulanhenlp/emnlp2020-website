@@ -49,6 +49,15 @@ a {
   }
 }
 
+.blog blockquote {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.blog li {
+  margin-left: 2rem;
+}
+
 main {
   min-height: calc(100vh - #{$navbar-height + $footer-height});
   
