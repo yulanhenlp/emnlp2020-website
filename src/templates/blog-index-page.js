@@ -8,8 +8,7 @@ import PageHelmet from "../components/PageHelmet";
 import "../styles/about-page.scss";
 import StandardPageTemplate from "../components/StandardPageTemplate";
 
-
-const DefaultPage = ({ data }) => {
+const BlogIndexPage = ({ data }) => {
   const { markdownRemark: page, footerData, navbarData, site, allPosts } = data;
   const { posts } = allPosts
 
@@ -23,13 +22,13 @@ const DefaultPage = ({ data }) => {
   );
 };
 
-DefaultPage.propTypes = {
+BlogIndexPage.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-export default DefaultPage;
+export default BlogIndexPage;
 
-export const defaultPageQuery = graphql`
+export const blogIndexPageQuery = graphql`
   query BlogIndexPage($id: String!) {
     allPosts: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "blog-post-page"}}}, sort: {fields: frontmatter___date, order: DESC}) {
       posts: edges {
@@ -40,6 +39,10 @@ export const defaultPageQuery = graphql`
           frontmatter {
             title
             date(formatString:"MMMM Do, YYYY")
+            updated {
+              date(formatString:"MMMM Do")
+              details
+            }
           }
         }
       }
