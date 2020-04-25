@@ -2,13 +2,16 @@
 templateKey: blog-post-page
 title: "EMNLP Episode I: A New Hope – a.k.a. “Findings of EMNLP”"
 date: 2020-04-19
+updated: 
+  - date: 2020-04-26
+    details: "Created addendum with FAQs"
 seo:
   title: "Findings of ACL"
   description: >- 
     We are creating a new sister publication, “Findings of ACL: EMNLP 2020” (hereafter Findings), which will serve as an online journal for papers that are not accepted for publication in the main conference, but nonetheless have been assessed by the programme committee as solid work with sufficient substance, quality and novelty to warrant publication.
 ---
 
-An innovation for EMNLP 2020 is a new acceptance category, which will allow for more high quality papers (short and long) to be accepted than we can accomodate in the conference itself. We are creating a new sister publication, “_Findings of ACL: EMNLP 2020_” (hereafter _Findings_), which will serve as an online journal for papers that are not accepted for publication in the main conference, but nonetheless have been assessed by the programme committee as solid work with sufficient substance, quality and novelty to warrant publication. 
+An innovation for EMNLP 2020 is a new acceptance category, which will allow for more high quality papers (short and long) to be accepted than we can accomodate in the conference itself. We are creating a new sister publication, “*Findings of ACL: EMNLP 2020_” (hereafter _Findings_), which will serve as an online journal for papers that are not accepted for publication in the main conference, but nonetheless have been assessed by the programme committee as solid work with sufficient substance, quality and novelty to warrant publication. 
 
 These papers will be invited to be published with the stamp of peer review in a new _Findings_ online journal, which will be indexed as part of the ACL anthology. 
 
@@ -43,3 +46,45 @@ We hope that having a paper appearing in _Findings_ will be a mark of pride, and
 
 – _EMNLP Programme Chairs_
 (based on ideas from Tim Baldwin & the ACL Reviewing Committee)
+
+## Addendum 
+
+We’ve been receiving considerable feedback on this initiative, and questions about the scheme. Please see our answers to several common questions and concerns:
+
+**Will papers that meet the criteria for _Findings_ be excluded from the main conference?**
+  
+  No, many such papers make fine additions to the conference. _Findings_ will take those borderline papers which would otherwise have been rejected, but that PC have assessed as being solid work.  Reviewers will be asked some additional questions (exact wording yet to be decided) to aid the senior PC to make these decisions, and additional guidance will provided to educate reviewers, and to ensure reviewers don’t use this as an invitation to down-vote work they see as non-trendy, or other counterproductive behaviours.
+
+**Will this scheme exacerbate biases in reviewing and paper acceptance?**
+  
+  The reviewing process isn’t perfect, with several inherent biases. See for example, Ken Church’s papers on this topic, and broader issues with reviewing that led to the creation of EMNLP in the first place. We will do our best to mitigate these biases (e.g., overly conservative reviewing biased towards well established tasks, reviewers overly biased towards “trendy” tasks, or their own sub-fields) and ensure that the reviewing process is as fair as possible. This applies equally to papers for the EMNLP conference and Findings. Our primary focus will be on EMNLP conference papers, and only after these decisions are made, will we look at the remaining papers to identify those that warrant acceptance into Findings. 
+
+**How will _Findings_ papers be reviewed?**
+
+The same as for all other EMNLP papers, it’s just that in the final decision stages by ACs, SACs and the PCs we will have a new third category of decision, alongside accept and reject, which is to accept into _Findings_.  _Findings_ decisions will be made after we have decided the papers to be accepted into the main conference. The notification date will be the same for EMNLP conference papers and _Findings_ papers.
+
+**How do I submit to _Findings_?**
+
+Just submit to EMNLP, and your paper will be assessed for both the EMNLP main conference and for Findings.
+Should Findings be called a “ journal”?
+Perhaps there’s a better term for the publication venue, but we opted for “journal” for want of a more appropriate word. Your suggestions are welcome.
+
+**Will I get a presentation or poster presentation at the main conference for my Findings paper?**
+
+No, but we will be providing a means for match-making with workshops, where you might be able to present your work.
+
+**Will _Findings_ be a recognised “journal”?**
+
+Not yet, but we will take steps to ensure it has its own section in the ACL anthology, with all papers accessible, and with its own ISBN. We expect that Findings will grow with future conferences (e.g., having a new volume associated with each conference), and become a recognised and respected publication venue within the field. Initially, we will not be seeking to have _Findings_ indexed in Scopus and Web-of-Science etc - this is a complex process, and TACL is only now applying after 7 years of operation - but this is a natural option we might consider in future years.
+
+**Is there any advantage of publishing in _Findings_ versus an EMNLP workshop? **
+This depends on the publication prestige, which we would expect to be higher for findings than for most workshops. Workshops offer a presentation slot, and _Findings_ does not, however we expect that many _Findings_ papers will be invited to be presented at specific workshops. Added to this, _Findings_ papers will not require further review, and consequent delay in publication or extensions to the anonymity period. 
+
+**Why should the authors agree to publish in _Findings_ if they know the paper was only narrowly rejected from EMNLP, and so might get into another conference?**
+
+This is a judgement call to be made by the authors. Some authors may want to take the acceptance, rather than risk another rejection, especially as the paper was borderline. This might be more pertinent if the paper has already been rejected from another publication venue, or if the author needs to fill out their CV, e.g., a PhD student wanting to secure a postdoc or faculty position. Other reasons might be that the importance of the work may diminish with time, and the work needs to be published quickly to have an impact.
+
+**Will there be an option for papers to choose to go to _Findings_ instead of the main conference, if they cannot travel to the conference?**
+
+We’ll duck this one, as it’s not relevant for an online conference. It’s an interesting idea, but stay tuned for the discussion of novel reviewing models in the ACL 2020 business meeting, which include similar features (which will include _Findings_.)
+Please bear in mind that this is the first trial of a new method for publication in the field, and there may be some shortcomings or risks that arise - as with any change. The proof will be in the pudding, and we discuss _Findings_ in the ACL and EMNLP business meetings, where you’ll also have a chance to air your thoughts about _Findings_, and other topics relating to reviewing. 
