@@ -39,11 +39,11 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "start": "yarn run develop",
+    "start": "npm run develop",
     "clean": "rm -rf public",
     "clobber": "rm -rf .cache public",
-    "build": "yarn run clean && gatsby build",
-    "develop": "yarn run clean && gatsby develop",
+    "build": "npm run clean && gatsby build",
+    "develop": "npm run clean && gatsby develop",
     "serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
