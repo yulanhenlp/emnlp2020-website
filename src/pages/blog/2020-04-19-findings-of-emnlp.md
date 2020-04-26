@@ -77,7 +77,8 @@ No, but we will be providing a means for match-making with workshops, where you 
 
 Not yet, but we will take steps to ensure it has its own section in the ACL anthology, with all papers accessible, and with its own ISBN. We expect that Findings will grow with future conferences (e.g., having a new volume associated with each conference), and become a recognised and respected publication venue within the field. Initially, we will not be seeking to have _Findings_ indexed in Scopus and Web-of-Science etc - this is a complex process, and TACL is only now applying after 7 years of operation - but this is a natural option we might consider in future years.
 
-**Is there any advantage of publishing in _Findings_ versus an EMNLP workshop? **
+**Is there any advantage of publishing in _Findings_ versus an EMNLP workshop?**
+
 This depends on the publication prestige, which we would expect to be higher for findings than for most workshops. Workshops offer a presentation slot, and _Findings_ does not, however we expect that many _Findings_ papers will be invited to be presented at specific workshops. Added to this, _Findings_ papers will not require further review, and consequent delay in publication or extensions to the anonymity period. 
 
 **Why should the authors agree to publish in _Findings_ if they know the paper was only narrowly rejected from EMNLP, and so might get into another conference?**
