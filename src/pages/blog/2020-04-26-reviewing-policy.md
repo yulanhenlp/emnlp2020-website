@@ -100,6 +100,6 @@ detailed and constructive feedback on their submissions. On top of this
 we will recognise the efforts of excellent reviewers, more details to
 follow.
 
-**Registering as a reviewer** To indicate if you can serve as a reviewer for EMNLP 2020, please visit the [Softconf EMNLP site](https://www.softconf.com/emnlp2020/papers/user/scmd.cgi?scmd=updateProfile) to fill in reviewer survey form at the local user profile page.
+**Registering as a reviewer.** To indicate if you can serve as a reviewer for EMNLP 2020, please visit the [Softconf EMNLP site](https://www.softconf.com/emnlp2020/papers/user/scmd.cgi?scmd=updateProfile) to fill in reviewer survey form at the local user profile page.
 
 
