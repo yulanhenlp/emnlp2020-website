@@ -66,7 +66,9 @@ The same as for all other EMNLP papers, it’s just that in the final decision s
 **How do I submit to _Findings_?**
 
 Just submit to EMNLP, and your paper will be assessed for both the EMNLP main conference and for Findings.
-Should Findings be called a “ journal”?
+
+**Should Findings be called a “ journal”?**
+
 Perhaps there’s a better term for the publication venue, but we opted for “journal” for want of a more appropriate word. Your suggestions are welcome.
 
 **Will I get a presentation or poster presentation at the main conference for my Findings paper?**
