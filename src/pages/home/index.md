@@ -10,6 +10,8 @@ seo:
     The 2020 Conference on Empirical Methods in Natural Language Processing
   title: EMNLP 2020
 newsItems:
+  - date: 2020-04-29
+    text: There is now an exemption to the [anonymity period policy](/call-for-papers#anonymity-period) for research relating to COVID-19
   - date: 2020-04-08
     text: "[EMNLP 2020 has moved entirely to an online format](/attending#covid-online) and the conference dates have moved to one week later."
   - date: 2020-03-30

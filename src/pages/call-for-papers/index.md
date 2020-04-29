@@ -132,6 +132,8 @@ The following rules and guidelines are meant to protect the integrity of double-
 
 - Note that, while you are not prohibited from making a non-anonymous version available online before the start of the anonymity period, this does make double-blind reviewing more difficult to maintain, and we therefore encourage you to wait until the end of the anonymity period. Alternatively, you may consider submitting your work to the Computational Linguistics journal, which does not require anonymization and has a track for “short” (i.e., conference-length) papers.
 
+**Update, April 29, 2020**: We are making an exception to EMNLP’s anonymity period policy for papers related to Covid-19.  If authors deem their research is highly timely and need to share their results with the Covid-19 global research community during the EMNLP anonymity period (that is, starting May 1st until paper notification Sep 14, 2020), we allow authors to put papers on Arxiv or share in other forms during this period. However, authors need to email EMNLP Program Chairs ([emnlp2020programmechairs@gmail.com](mailto:emnlp2020programmechairs@gmail.com)) to get approval in advance that their papers are exempt from the conference’s anonymity policy. Reviewers for these papers will know that the papers are not violating the policy.
+
 
 ## Instructions For Double-Blind Review
 
