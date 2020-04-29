@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "EMNLP 2020 Conference",
-    siteUrl: "https://2020.emnlp.org",
-    sponsors: [],
-    sponsorLevels: []
+    description: "2020 Conference on Empirical Methods in Natural Language Processing",
+    siteUrl: "https://2020.emnlp.org"
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -49,6 +48,64 @@ module.exports = {
       resolve: `gatsby-plugin-favicon`,
       options: {
         logo: "./src/img/favicon.png",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              const { siteUrl } = site.siteMetadata;
+
+              return allMarkdownRemark.edges.map(edge => {
+                const { node } = edge
+
+                return Object.assign({}, node.frontmatter, {
+                  description: node.title,
+                  date: node.frontmatter.updated ? (node.frontmatter.updated[0].date || node.frontmatter.date) : node.frontmatter.date,
+                  url: siteUrl + node.fields.slug,
+                  guid: siteUrl + node.fields.slug,
+                  custom_elements: [{ "content:encoded": node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "blog-post-page"}}}, sort: {fields: frontmatter___date, order: DESC}) {
+                  edges {
+                    node {
+                      html
+                      fields {
+                        slug
+                      }
+                      frontmatter {
+                        title
+                        date
+                        updated {
+                          date
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/blog/rss.xml",
+            title: "EMNLP 2020 Blog",
+          },
+        ],
       },
     },
     "gatsby-plugin-netlify", // make sure to keep it last in the array

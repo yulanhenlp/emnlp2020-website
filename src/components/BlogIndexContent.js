@@ -15,7 +15,8 @@ const BlogIndexContent = ({ posts }) => (
     <h2>All Posts</h2> 
     <ul>
       {posts.map(({ post }) => <BlogIndexListing post={post} />)}
-    </ul> 
+    </ul>
+    <p className="rss-link"><a href="/blog/rss.xml">RSS Feed</a></p>
   </article>
 );
 
