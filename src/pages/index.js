@@ -31,52 +31,6 @@ const NewsSection = ({items}) => (
   </div>
 )
 
-const SponsorImageLink = (props) => (
-  <img className="sponsor-image" src={`/sponsors/${props.sponsor.image}`} alt={props.sponsor.longName} />
-)
-
-const SponsorTextLink = (props) => (
-  <div className="sponsor-name">{props.sponsor.longName}</div>
-)
-
-const Sponsor = (props) => {
-  const { sponsor } = props;
-  return (
-    <a href={sponsor.link} title={sponsor.name}>
-      <div className="sponsor-tile" key={sponsor.name}>
-        <div className="sponsor-image-helper" />
-        {sponsor.image === undefined ? <SponsorTextLink sponsor={sponsor} /> : <SponsorImageLink sponsor={sponsor} />}
-      </div>
-    </a>
-  )
-}
-
-const SponsorLevelListing = (props) => {
-  const { level, sponsors } = props;
-  return (
-    <div className={`sponsor-block level-${level.toLowerCase()}`} key={level}>
-      <h4 className="sponsor-level">{level} Sponsors</h4>
-      <div className="sponsors-at-level">
-        {sponsors.map(s => <Sponsor sponsor={s} />)}
-      </div>
-    </div>
-  );
-}
-
-const SponsorListing = (props) => {
-  const { sponsors } = props;
-  return (
-    <div className="sponsor-listing">
-      {
-        sponsorLevels.map(level => {
-          const matching = sponsors.filter(s => s.level === level);
-          return matching.length ? <SponsorLevelListing level={level} sponsors={matching} /> : null;
-        })
-      }
-    </div>
-  );
-}
-
 const KeyDateListing = ({ date, dateEnd, dateStartShort, event, formerly }) => (
   <tr className="key-date-info">
     <td className="date">{dateEnd ? `${dateStartShort} – ${dateEnd}` : date}</td>
@@ -104,7 +58,7 @@ const KeyDates = ({ items: dates }) => (
   </div>
 );
 
-export const HomePageTemplate = ({ home, sponsors }) => {
+export const HomePageTemplate = ({ home }) => {
   return (
     <>
       <section className="header">
@@ -125,9 +79,6 @@ export const HomePageTemplate = ({ home, sponsors }) => {
       </section>
       <NewsSection items={home.newsItems}/>
       <KeyDates items={home.keyDates}/>
-      <section className="sponsors">
-        <SponsorListing sponsors={sponsors} />
-      </section>
      </>
   );
 };
@@ -139,11 +90,10 @@ class HomePage extends React.Component {
       data: { footerData, navbarData, site },
     } = this.props;
     const { frontmatter: home } = data.homePageData.edges[0].node;
-    const { sponsors } = site.siteMetadata;
     return (
       <Layout footerData={footerData} navbarData={navbarData} site={site}>
         <PageHelmet page={{frontmatter: home}} />
-        <HomePageTemplate home={home} sponsors={sponsors} />
+        <HomePageTemplate home={home} />
       </Layout>
     );
   }

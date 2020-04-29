@@ -55,17 +55,6 @@ export const query = graphql`
         }
       }
     }
-    site {      
-      siteMetadata {       
-        sponsors {
-          name
-          longName
-          level
-          link
-          image
-        }
-      }    
-    }
   }
 `;
 
