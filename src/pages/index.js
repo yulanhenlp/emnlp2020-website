@@ -77,11 +77,11 @@ const SponsorListing = (props) => {
   );
 }
 
-const KeyDateListing = ({ date, event, formerly }) => (
+const KeyDateListing = ({ date, dateEnd, dateStartShort, event, formerly }) => (
   <tr className="key-date-info">
-    <td className="date">{date}</td>
+    <td className="date">{dateEnd ? `${dateStartShort} – ${dateEnd}` : date}</td>
     <td className="key-date-entry">
-      {event}
+      <ReactMarkdown renderers={{paragraph: 'span'}} source={event}/>
       { formerly ? <span className="key-date-formerly"> (was: {formerly})</span>: null }
     </td>
   </tr>
@@ -93,7 +93,7 @@ const KeyDates = ({ items: dates }) => (
       <h4>Key Dates</h4>
       <table className="key-date-table">
         <tbody>
-          {dates.filter(d => d.important).map(d => <KeyDateListing {...d} key={d.event}/>)}
+          {dates.map(d => <KeyDateListing {...d} key={d.event}/>)}
         </tbody>
       </table>
       <span className="extra-date-info">
@@ -180,6 +180,8 @@ export const pageQuery = graphql`
             }
             keyDates {
               date(formatString: "MMMM Do, YYYY")
+              dateEnd(formatString: "MMMM Do, YYYY")
+              dateStartShort: date(formatString: "MMMM Do")
               event
               important
               formerly(formatString: "MMMM Do")

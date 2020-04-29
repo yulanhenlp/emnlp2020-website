@@ -26,14 +26,20 @@ newsItems:
     text: "The [workshops listing](/workshops) now provides details of all 24 workshops"
 keyDates:
   - date: 2020-05-01
-    event: Anonymity period begins
+    event: "[Anonymity period](/call-for-papers#anonymity-period) begins"
   - date: 2020-06-01
     event: Submission deadline (long and short papers)
     important: true
     formerly: 2020-05-11
+  - date: 2020-08-07
+    event: Author response period
+    important: true
+    dateEnd: 2020-08-13
   - date: 2020-09-14
     event: Notification of acceptance (long & short papers)
     important: true
+  - date: 2020-10-05
+    event: Camera-ready papers due (long & short papers)
   - date: 2020-11-16
     event: Main conference begins
     important: true
