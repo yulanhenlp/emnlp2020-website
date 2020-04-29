@@ -52,7 +52,8 @@ const KeyDates = ({ items: dates }) => (
       </table>
       <span className="extra-date-info">
         <p><strong>Updated April 8th, 2020</strong> – the above dates have all been updated to reflect the new scheduled dates EMNLP in its online format.</p>
-        <p>See the <a href="/call-for-papers">call for papers</a> for further important details about the submission process</p>
+        <p>See the <a href="/call-for-papers">call for papers</a> for further important details about the submission process.</p>
+        <p>All deadlines are 11.59 pm UTC -12h (“anywhere on Earth”).</p>
       </span>
     </section>
   </div>
