@@ -33,7 +33,6 @@ keyDates:
     formerly: 2020-05-11
   - date: 2020-08-07
     event: Author response period
-    important: true
     dateEnd: 2020-08-13
   - date: 2020-09-14
     event: Notification of acceptance (long & short papers)
@@ -41,9 +40,11 @@ keyDates:
   - date: 2020-10-05
     event: Camera-ready papers due (long & short papers)
   - date: 2020-11-16
-    event: Main conference begins
+    event: Main conference
+    dateEnd: 2020-11-18
     important: true
     formerly: 2020-11-08
   - date: 2020-11-19
+    dateEnd: 2020-11-20
     event: Workshops and tutorials
     important: true
