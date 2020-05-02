@@ -24,7 +24,7 @@ const PlaceholderPhoto = () => (
 );
 
 const MemberListing = ({ name, organization, sharpImageData }) => (
-  <article className="member">
+  <article className="member card">
     {sharpImageData ? <MemberPhoto sharpImageData={sharpImageData} name={name}/> : <PlaceholderPhoto />}
     <div className="member-text-details">
       <div className="member-name">{name}</div>

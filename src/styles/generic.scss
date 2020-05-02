@@ -58,6 +58,12 @@ a {
   margin-left: 2rem;
 }
 
+.card {
+  padding: 0.75rem 0.5rem;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
 main {
   min-height: calc(100vh - #{$navbar-height + $footer-height});
   

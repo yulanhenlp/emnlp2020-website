@@ -10,8 +10,6 @@ import Layout from "../components/Layout";
 import "../styles/home.scss";
 import HTMLContent from "../components/Content";
 
-const sponsorLevels = ["Platinum", "Gold", "Silver", "Bronze"];
-
 const NewsItem = ({ date, text }) => (
   <tr className="news-item">
     <td className="date">{date}</td>
@@ -52,30 +50,57 @@ const NewsSection = ({ items }) => (
   </div>
 )
 
-const KeyDateListing = ({ date, dateEnd, dateStartShort, event, formerly }) => (
-  <tr className="key-date-info">
-    <td className="date">{dateEnd ? `${dateStartShort} – ${dateEnd}` : date}</td>
-    <td className="key-date-entry">
+const renderableDateRange = (dateStart, dateEnd, delim = ' – ') => {
+  if (!dateEnd)
+    return dateStart;
+  let commonPrefixLen = 0;
+  const final = Math.max(dateStart.length, dateEnd.length);
+  for (let i = 0; i < final; i++) {
+    if (dateStart.charAt(i) === dateEnd.charAt(i))
+      commonPrefixLen = i;
+    else
+      break;
+  }
+  let commonSuffixLen = 0;
+  for (let i = 0; i < final ; i++) {
+    if (dateStart.charAt(dateStart.length - i) === dateEnd.charAt(dateEnd.length - i))
+      commonSuffixLen = i;
+    else
+      break;
+  }
+  console.log(`dateStart=${dateStart};dateEnd=${dateEnd};commonSuffix=${commonSuffixLen};commonPrefix=${commonPrefixLen}`)
+  const prefix = dateStart.substr(0, commonPrefixLen);
+  const suffix = dateStart.substr(dateStart.length - commonSuffixLen);
+  const startUniquePart = dateStart.substr(commonPrefixLen, dateStart.length - commonSuffixLen - commonPrefixLen);
+  const endUniquePart = dateEnd.substr(commonPrefixLen, dateEnd.length - commonSuffixLen - commonPrefixLen);
+  console.log(`prefix=${prefix};suffix=${suffix};startUniquePart=${startUniquePart};endUniquePart=${endUniquePart}`)
+  return `${prefix}${startUniquePart}${delim}${endUniquePart}${suffix}`;
+}
+
+const KeyDateListing = ({ date, dateEnd, event, formerly }) => (
+  <>
+    <dt className="date">{renderableDateRange(date, dateEnd)}</dt>
+    <dd className="key-date-entry">
       <ReactMarkdown renderers={{paragraph: 'span'}} source={event}/>
       { formerly ? <span className="key-date-formerly"> (was: {formerly})</span>: null }
-    </td>
-  </tr>
+    </dd>
+  </>
 );
 
 const KeyDates = ({ items: dates }) => (
   <div className="key-dates-section-wrapper">
-    <section className="key-dates-section">
+    <section className="key-dates-section card">
       <h4>Key Dates</h4>
-      <table className="key-date-table">
-        <tbody>
-          {dates.map(d => <KeyDateListing {...d} key={d.event}/>)}
-        </tbody>
-      </table>
-      <span className="extra-date-info">
-        <p><strong>Updated April 8th, 2020</strong> – the above dates have all been updated to reflect the new scheduled dates EMNLP in its online format.</p>
-        <p>See the <a href="/call-for-papers">call for papers</a> for further important details about the submission process.</p>
-        <p>All deadlines are 11.59 pm UTC -12h (“anywhere on Earth”).</p>
-      </span>
+        <div className="key-dates-card-content">
+          <dl className="key-dates-listing">
+            {dates.map(d => <KeyDateListing {...d} key={d.event}/>)}
+          </dl>
+          <span className="extra-date-info">
+            <p><strong>Updated April 8, 2020</strong> – the above dates have all been updated to reflect the new scheduled dates EMNLP in its online format.</p>
+            <p>See the <a href="/call-for-papers">call for papers</a> for further important details about the submission process.</p>
+            <p>All deadlines are 11.59 pm UTC -12h (“anywhere on Earth”).</p>
+          </span>
+      </div>
     </section>
   </div>
 );
@@ -100,13 +125,13 @@ export const HomePageTemplate = ({ home, blogPosts }) => {
           </div>
         </div>
       </section>
-      <main className="key-info-content">
+      <section className="key-info-content">
         <div className="updates-section">
           <BlogPosts items={blogPosts}/>
           <NewsSection items={home.newsItems}/>
         </div>
         <KeyDates items={home.keyDates}/>
-      </main>
+      </section>
      </>
   );
 };
@@ -160,16 +185,15 @@ export const pageQuery = graphql`
               description
             }
             newsItems {
-              date(formatString: "MMMM Do, YYYY")
+              date(formatString: "MMMM D, YYYY")
               text
             }
             keyDates {
-              date(formatString: "MMMM Do, YYYY")
-              dateEnd(formatString: "MMMM Do, YYYY")
-              dateStartShort: date(formatString: "MMMM Do")
+              date(formatString: "MMMM D, YYYY")
+              dateEnd(formatString: "MMMM D, YYYY")
               event
               important
-              formerly(formatString: "MMMM Do")
+              formerly(formatString: "MMMM D")
             }
           }
         }
@@ -183,7 +207,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
-            date(formatString:"MMMM Do, YYYY")
+            date(formatString:"MMMM D, YYYY")
           }
         }
       }
