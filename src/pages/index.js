@@ -126,11 +126,11 @@ export const HomePageTemplate = ({ home, blogPosts }) => {
         </div>
       </section>
       <section className="key-info-content">
+      <KeyDates items={home.keyDates}/>
         <div className="updates-section">
           <BlogPosts items={blogPosts}/>
           <NewsSection items={home.newsItems}/>
         </div>
-        <KeyDates items={home.keyDates}/>
       </section>
      </>
   );
