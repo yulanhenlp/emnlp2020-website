@@ -12,8 +12,6 @@ seo:
 newsItems:
   - date: 2020-05-15
     text: "The [call for system demonstrations](/call-for-papers/demos) is available"
-  - date: 2020-05-01
-    text: We have posted [answers to some FAQs](/blog/2020-05-01-submission-faqs-answered) about submission.
   - date: 2020-04-29
     text: There is now an exemption to the [anonymity period policy](/call-for-papers#anonymity-period) for research relating to COVID-19
   - date: 2020-04-08
