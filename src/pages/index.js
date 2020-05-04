@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import PageHelmet from "../components/PageHelmet";
+import RssIcon from "../components/RssIcon";
 import ReactMarkdown from "react-markdown";
 import "../styles/sponsors-page.scss";
 import { Link } from "gatsby";
@@ -9,6 +10,9 @@ import { Link } from "gatsby";
 import Layout from "../components/Layout";
 import "../styles/home.scss";
 import HTMLContent from "../components/Content";
+
+const MAX_BLOG_POSTS = 4
+const MAX_NEWS_ITEMS = 5
 
 const NewsItem = ({ date, text }) => (
   <tr className="news-item">
@@ -27,12 +31,13 @@ const BlogPostSummary = ({ date, title, link }) => (
 const BlogPosts = ({ items }) => (
   <div className="blog-post-list-wrapper updates-section-wrapper">
     <section className="blog-post-list-section single-updates-section">
-      <h4>Latest Blog Posts</h4>
+      <h4>Latest Blog Posts <RssIcon link="/blog/rss.xml"/></h4>
       <table className="blog-section-list">
         <tbody>
-          {items.map(i => <BlogPostSummary {...i} key={i.text}></BlogPostSummary>)}
+          {items.slice(0, MAX_BLOG_POSTS).map(i => <BlogPostSummary {...i} key={i.text}></BlogPostSummary>)}
         </tbody>
       </table>
+      <p className="all-posts"><Link to="/blog">View all blog posts</Link></p>
     </section>
   </div>
 )
@@ -43,7 +48,7 @@ const NewsSection = ({ items }) => (
       <h4>Latest News</h4>
       <table className="news-section-list">
         <tbody>
-          {items.map(i => <NewsItem {...i} key={i.text}/>)}
+          {items.filter((i, idx) => idx < MAX_NEWS_ITEMS || i.persist).map(i => <NewsItem {...i} key={i.text}/>)}
         </tbody>
       </table>
     </section>
@@ -187,6 +192,7 @@ export const pageQuery = graphql`
             newsItems {
               date(formatString: "MMMM D, YYYY")
               text
+              persist
             }
             keyDates {
               date(formatString: "MMMM D, YYYY")

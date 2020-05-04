@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import RssIcon from "../components/RssIcon";
 
 const BlogIndexListing = ({ post }) => {
   const { title, date, updated } = post.frontmatter;
@@ -16,7 +17,7 @@ const BlogIndexContent = ({ posts }) => (
     <ul>
       {posts.map(({ post }) => <BlogIndexListing post={post} />)}
     </ul>
-    <p className="rss-link"><a href="/blog/rss.xml">RSS Feed</a></p>
+    <RssIcon link="/blog/rss.xml"/>
   </article>
 );
 

@@ -14,14 +14,18 @@ newsItems:
     text: "The [call for system demonstrations](/call-for-papers/demos) is available"
   - date: 2020-04-29
     text: There is now an exemption to the [anonymity period policy](/call-for-papers#anonymity-period) for research relating to COVID-19
+    persist: true
   - date: 2020-04-08
     text: "[EMNLP 2020 has moved entirely to an online format](/attending#covid-online) and the conference dates have moved to one week later."
+    persist: true
   - date: 2020-03-30
     text: In view of the COVID-19 situation, [there is a good chance that EMNLP 2020 may be run purely online](/attending#covid-online). 
   - date: 2020-03-10
     text: The call for papers has a [ethics policy](/call-for-papers#new-ethics-policy) and updated [submission guidelines](/call-for-papers#paper-submission-and-templates) 
+    persist: true
   - date: 2020-03-05
     text: "[Templates and styles files for papers](/files/emnlp2020-templates.zip) are available for download"
+    persist: true
   - date: 2020-01-13
     text: "The [call for papers](/call-for-papers) is available"
   - date: 2019-12-28

@@ -92,6 +92,17 @@
   td {
     padding: 2px 4px;
   }
+
+  h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  p.all-posts {
+    font-style: italic;
+    text-align: right;
+  }
 }
 
 dl.key-dates-listing {
@@ -138,6 +149,7 @@ dl.key-dates-listing {
   flex-direction: column;
   flex-basis: 60%;
   flex-grow: 1;
+  justify-content: space-around;
 }
 
 .key-dates-section-wrapper {
@@ -147,7 +159,7 @@ dl.key-dates-listing {
 }
 
 .updates-section-wrapper, .key-dates-section-wrapper {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 
   p {
     margin-left: auto;
@@ -168,8 +180,6 @@ dl.key-dates-listing {
   font-style: italic;
   font-size: 0.9rem;
 }
-
-
 
 .key-date-formerly {
   font-style: italic;

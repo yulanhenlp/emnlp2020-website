@@ -25,6 +25,20 @@ a {
   }
 }
 
+.rss {
+  background-color: #aaa;
+  color: white;
+  padding: 2px 4px;
+  font-size: 85%;
+  border-radius: 3px;
+  font-weight: bold;
+  width: fit-content;
+  
+  a {
+    color: white;
+  }
+}
+
 .container {
   max-width: $container-width;
   padding: 0 $container-padding;
