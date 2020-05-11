@@ -105,6 +105,38 @@ module.exports = {
             output: "/blog/rss.xml",
             title: "EMNLP 2020 Blog",
           },
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              const { siteUrl } = site.siteMetadata;
+
+              return allMarkdownRemark.edges[0].node.frontmatter.newsItems.map(item => {
+                return Object.assign({}, newsItems, {
+                  description: item.title,
+                  date: item.date,
+                  url: siteUrl,
+                  guid: siteUrl + item.title
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "home-page" } } }) {
+                  edges {
+                    node {
+                      frontmatter {
+                        newsItems {
+                          date
+                          text
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/news/rss.xml",
+            title: "EMNLP 2020 Latest News",
+          },
         ],
       },
     },
