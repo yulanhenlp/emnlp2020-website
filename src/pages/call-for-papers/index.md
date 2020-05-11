@@ -192,3 +192,7 @@ Previous presentations of the work (e.g. preprints on arXiv.org) should be indic
 At least one author of each accepted paper must register for EMNLP 2020 by the early registration deadline.
 
 
+## Reviewing Policy
+
+Please refer to our [reviewing policy](blog/2020-04-26-reviewing-policy). In the paper submission form, we ask you to provide the usernames of authors that have signed up already as reviewers or that you are nominating as reviewers at submission time. If none of the authors can review, please let program chairs know your reasons.  Papers without such information may be rejected without review.
+
