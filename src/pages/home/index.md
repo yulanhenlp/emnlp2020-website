@@ -10,6 +10,8 @@ seo:
     The 2020 Conference on Empirical Methods in Natural Language Processing
   title: EMNLP 2020
 newsItems:
+  - date: 2020-05-15
+    text: "The [call for system demonstrations](/call-for-papers/demos) is available"
   - date: 2020-05-01
     text: We have posted [answers to some FAQs](/blog/2020-05-01-submission-faqs-answered) about submission.
   - date: 2020-04-29

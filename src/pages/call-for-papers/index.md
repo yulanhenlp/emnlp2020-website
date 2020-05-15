@@ -1,17 +1,17 @@
 ---
 templateKey: default-page
-title: Call for Papers – EMNLP 2020
+title: Call for Papers
 seo:
   browserTitle: Call for Papers | EMNLP 2020
   description: 
   title: Call for Papers | EMNLP 2020
 ---
 
-
 * **Long and short paper submission deadline: June 1, 2020**
 * **[Templates and styles files for papers](/files/emnlp2020-templates.zip) are available for download**
 * **Authors can [submit their papers](https://www.softconf.com/emnlp2020/papers) using Softconf**
 * **Further details about the submission process are available in the [FAQ page](/blog/2020-05-01-submission-faqs-answered)**
+* **The [call for system demonstrations](/call-for-papers/demos) is also available**
 
 ## Overview
 
