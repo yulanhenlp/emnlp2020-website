@@ -110,11 +110,12 @@ module.exports = {
               const { siteUrl } = site.siteMetadata;
 
               return allMarkdownRemark.edges[0].node.frontmatter.newsItems.map(item => {
-                return Object.assign({}, newsItems, {
-                  description: item.title,
+                return Object.assign({}, item, {
+                  description: stripMarkdown(item.text),
                   date: item.date,
                   url: siteUrl,
-                  guid: siteUrl + item.title
+                  guid: `${siteUrl}:${item.text}`,
+                  custom_elements: [{ "content:encoded": htmlifyMarkdown(item.text) }],
                 })
               })
             },
