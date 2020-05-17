@@ -1,3 +1,17 @@
+const remark = require('remark');
+const strip = require('strip-markdown');
+
+const stripMarkdown = (markdownText) => {
+  // return remark().use(strip).processSync(markdownText).toString()
+  return '';
+}
+
+const htmlifyMarkdown = (markdownText) => {
+  // return remark().processSync(markdownText).toString()
+  return '';
+}
+
+
 module.exports = {
   siteMetadata: {
     title: "EMNLP 2020 Conference",

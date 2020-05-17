@@ -45,7 +45,7 @@ const BlogPosts = ({ items }) => (
 const NewsSection = ({ items }) => (
   <div className="news-section-wrapper updates-section-wrapper">
     <section className="news-section single-updates-section">
-      <h4>Latest News</h4>
+      <h4>Latest News <RssIcon link="/news/rss.xml"/></h4>
       <table className="news-section-list">
         <tbody>
           {items.filter((i, idx) => idx < MAX_NEWS_ITEMS || i.persist).map(i => <NewsItem {...i} key={i.text}/>)}

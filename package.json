@@ -32,6 +32,8 @@
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.0",
     "react-markdown": "^4.2.2",
+    "remark": "^12.0.0",
+    "strip-markdown": "^3.1.2",
     "uuid": "^3.3.3"
   },
   "keywords": [
@@ -41,8 +43,8 @@
   "main": "n/a",
   "scripts": {
     "start": "npm run develop",
-    "clean": "rm -rf public",
-    "clobber": "rm -rf .cache public",
+    "clean": "time rm -rf public",
+    "clobber": "time rm -rf .cache public",
     "build": "npm run clean && gatsby build",
     "develop": "npm run clean && gatsby develop",
     "serve": "gatsby serve",
