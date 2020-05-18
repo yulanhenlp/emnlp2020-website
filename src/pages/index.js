@@ -73,12 +73,10 @@ const renderableDateRange = (dateStart, dateEnd, delim = ' – ') => {
     else
       break;
   }
-  console.log(`dateStart=${dateStart};dateEnd=${dateEnd};commonSuffix=${commonSuffixLen};commonPrefix=${commonPrefixLen}`)
   const prefix = dateStart.substr(0, commonPrefixLen);
   const suffix = dateStart.substr(dateStart.length - commonSuffixLen);
   const startUniquePart = dateStart.substr(commonPrefixLen, dateStart.length - commonSuffixLen - commonPrefixLen);
   const endUniquePart = dateEnd.substr(commonPrefixLen, dateEnd.length - commonSuffixLen - commonPrefixLen);
-  console.log(`prefix=${prefix};suffix=${suffix};startUniquePart=${startUniquePart};endUniquePart=${endUniquePart}`)
   return `${prefix}${startUniquePart}${delim}${endUniquePart}${suffix}`;
 }
 
