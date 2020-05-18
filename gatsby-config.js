@@ -1,16 +1,16 @@
 const remark = require('remark');
 const strip = require('strip-markdown');
+const html = require('remark-html');
+const slug = require('slug');
 
 const stripMarkdown = (markdownText) => {
-  // return remark().use(strip).processSync(markdownText).toString()
-  return '';
+  stripped = remark().use(strip).processSync(markdownText).contents;
+  return stripped.slice(0, stripped.length - 1);
 }
 
 const htmlifyMarkdown = (markdownText) => {
-  // return remark().processSync(markdownText).toString()
-  return '';
+  return remark().use(html).processSync(markdownText).contents;
 }
-
 
 module.exports = {
   siteMetadata: {
@@ -123,15 +123,16 @@ module.exports = {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               const { siteUrl } = site.siteMetadata;
 
-              return allMarkdownRemark.edges[0].node.frontmatter.newsItems.map(item => {
-                return Object.assign({}, item, {
-                  description: stripMarkdown(item.text),
-                  date: item.date,
+              return allMarkdownRemark.edges[0].node.frontmatter.newsItems.map(({text, date}) => {
+                const bare = stripMarkdown(text)
+                return {
+                  title: bare,
+                  date: date,
                   url: siteUrl,
-                  guid: `${siteUrl}:${item.text}`,
-                  custom_elements: [{ "content:encoded": htmlifyMarkdown(item.text) }],
-                })
-              })
+                  guid: `${siteUrl}/news#${slug(bare).toLowerCase()}`,
+                  custom_elements: [{ "content:encoded": htmlifyMarkdown(text) }],
+                }
+              });
             },
             query: `
               {
