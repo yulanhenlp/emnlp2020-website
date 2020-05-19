@@ -203,7 +203,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    blogPostData: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "blog-post-page"}}}, sort: {fields: frontmatter___date, order: DESC}) {
+    blogPostData: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "blog-post-page"}}}, sort: {fields: frontmatter___date, order: DESC}, limit: 3) {
       edges {
         node {
           fields {
