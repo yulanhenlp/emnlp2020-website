@@ -59,6 +59,8 @@ any kind should not be rejected only for not topping the leaderboards.
 Regarding different kinds of contributions, here’s what Prof. Philip
 Resnik at University of Maryland says:
 
+<blockquote>
+
 I think there would be significant value in encouraging reviewers to
 think explicitly about the nature of the contribution, and what
 questions then need to be asked. As a first pass for
@@ -94,7 +96,7 @@ engineering, and theoretical contributions, rather than just one. But, I
 am suggesting, if a paper does not make a contribution in *any* of those
 three categories, with the sub-bullets having understandable answers,
 one should seriously consider whether it belongs at the conference.
-\[End of quote from Prof. Resnik\]
+</blockquote>
 
 Second, consider these other important points when reading the paper and
 writing your review:
