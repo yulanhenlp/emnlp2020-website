@@ -189,6 +189,8 @@ quality.
 Thank you all for helping to review papers, and let’s make a great EMNLP
 2020 together\!
 
+## Additional Resources
+
 To read more about the general advice on reviewing, we recommend the
 following resources:
 
