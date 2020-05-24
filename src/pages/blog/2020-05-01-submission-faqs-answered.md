@@ -18,7 +18,7 @@ A2: You are most welcome to submit your work to EMNLP2020 so long as the talk or
 A3: For arXiv submissions, May 01 11:59pm UTC-12h (anywhere on earth) is the submission deadline. For other non-anonymized versions, it is the deadline when such a version becomes public.
 
 #### Q4: Can we submit EMNLP papers to EMNLP workshops?
-A4: Given that we have recently changed the paper submission deadline and notification date due to Covid-19, we are making an exception to allow double submissions to both EMNLP and its workshops. This change has been reflected in the CFP.  
+A4: Given that we have recently changed the paper submission deadline and notification date due to Covid-19, we are making an exception to allow double submissions to both EMNLP and its workshops which have their submission deadlines falling after our original notification date of August 8, 2020. This change has been reflected in the CFP. Note that this is not the case for CoNLL. Thus, no dual submission is allowed to CoNLL.
 
 #### Q5: Can we submit EMNLP papers to a non-archival workshop? The workshop will not have formal published proceedings, but will provide links to accepted papers.
 A5: If your workshop paper is published online between 1st May and 14th September, then you would violate our anonymity policy. 
