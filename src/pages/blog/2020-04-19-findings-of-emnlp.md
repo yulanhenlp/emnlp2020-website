@@ -3,10 +3,10 @@ templateKey: blog-post-page
 title: "EMNLP Episode I: A New Hope – a.k.a. “Findings of EMNLP”"
 date: 2020-04-19
 updated: 
-  - date: 2020-04-26
-    details: "Created addendum with FAQs"
   - date: 2020-05-25
     details: "New terminology: 'companion' instead of 'journal'"
+  - date: 2020-04-26
+    details: "Created addendum with FAQs"
 seo:
   title: "Findings of ACL"
   description: >- 
