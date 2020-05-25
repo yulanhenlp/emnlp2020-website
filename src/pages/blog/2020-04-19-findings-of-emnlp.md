@@ -13,7 +13,7 @@ seo:
     We are creating a new sister publication, “Findings of ACL: EMNLP 2020” (hereafter Findings), which will serve as an online companion publication for papers that are not accepted for publication in the main conference, but nonetheless have been assessed by the programme committee as solid work with sufficient substance, quality and novelty to warrant publication.
 ---
 
-An innovation for EMNLP 2020 is a new acceptance category, which will allow for more high quality papers (short and long) to be accepted than we can accomodate in the conference itself. We are creating a new sister publication, “*Findings of ACL: EMNLP 2020_” (hereafter _Findings_), which will serve as an online companion publication for papers that are not accepted for publication in the main conference, but nonetheless have been assessed by the programme committee as solid work with sufficient substance, quality and novelty to warrant publication. 
+An innovation for EMNLP 2020 is a new acceptance category, which will allow for more high quality papers (short and long) to be accepted than we can accomodate in the conference itself. We are creating a new sister publication, “_Findings of ACL: EMNLP 2020_” (hereafter _Findings_), which will serve as an online companion publication for papers that are not accepted for publication in the main conference, but nonetheless have been assessed by the programme committee as solid work with sufficient substance, quality and novelty to warrant publication. 
 
 These papers will be invited to be published with the stamp of peer review in a new _Findings_ online companion, which will be indexed as part of the ACL anthology. 
 
