@@ -38,7 +38,7 @@ Many papers languish on arXiv without ever being published in a peer-reviewed ve
 
 ## Is this a one-off event?
 
-Should this new avenue for publication be warmly received by the EMNLP community, with sufficient uptake, we anticipate that _Findings_ will continue to operate alongside future iterations of EMNLP, and potentially other conferences in the ACL stable. Any future iterations would appear as different volumes of the _Findings_. 
+Should this new avenue for publication be warmly received by the EMNLP community, with sufficient uptake, we anticipate that _Findings_ will continue to operate alongside future iterations of EMNLP, and potentially other conferences in the ACL stable. Any future iterations would appear as different volumes of _Findings_. 
 
 We hope that having a paper appearing in _Findings_ will be a mark of pride, and provide an important new avenue to have your work published in a timely manner.
 
