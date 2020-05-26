@@ -43,6 +43,9 @@ export const blogIndexPageQuery = graphql`
               date(formatString:"MMMM Do")
               details
             }
+            seo {
+              description
+            }
           }
         }
       }
