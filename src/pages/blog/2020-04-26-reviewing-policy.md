@@ -5,7 +5,7 @@ date: 2020-04-26
 seo:
   title: Reviewing Policy for EMNLP
   description: >- 
-    
+    We announce a policy requiring authors to nominate a reviewer to submit papers
 ---
 
 Every year sees the number of papers submitted to EMNLP growing sharply.

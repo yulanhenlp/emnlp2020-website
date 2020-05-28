@@ -86,6 +86,16 @@ a {
   }
 }
 
+.blog-posts {
+  .post-title {
+    font-weight: bold;
+  }
+
+  li {
+    margin-bottom: 1rem;
+  }
+}
+
 .card {
   padding: 0.75rem 0.5rem;
   border: 1px solid lightgray;
