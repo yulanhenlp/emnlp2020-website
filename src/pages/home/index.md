@@ -10,6 +10,8 @@ seo:
     The 2020 Conference on Empirical Methods in Natural Language Processing
   title: EMNLP 2020
 newsItems:
+  - date: 2020-06-01
+    text: "The submission deadline has been pushed back 48 hours (now June 3rd) to allow people affected by recent civil unrest and Covid19-related lockdowns some additional time to finalise their papers."
   - date: 2020-05-15
     text: "The [call for system demonstrations](/call-for-papers/demos) is available"
   - date: 2020-04-29
