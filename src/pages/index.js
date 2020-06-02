@@ -99,7 +99,7 @@ const KeyDates = ({ items: dates }) => (
             {dates.map(d => <KeyDateListing {...d} key={d.event}/>)}
           </dl>
           <span className="extra-date-info">
-            <p><strong>Updated April 8, 2020</strong> – the above dates have all been updated to reflect the new scheduled dates EMNLP in its online format.</p>
+            <p><strong>Updated April 8, 2020; June 1, 2020</strong> – the above dates have all been updated to reflect the new scheduled dates EMNLP in its online format, and to account for recent events.</p>
             <p>See the <a href="/call-for-papers">call for papers</a> for further important details about the submission process.</p>
             <p>All deadlines are 11.59 pm UTC -12h (“anywhere on Earth”).</p>
           </span>
