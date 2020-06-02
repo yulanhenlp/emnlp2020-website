@@ -7,7 +7,7 @@ seo:
   title: Call for Papers | EMNLP 2020
 ---
 
-* **Long and short paper submission deadline: June 1, 2020**
+* **Long and short paper submission deadline: June 3, 2020** (updated)
 * **[Templates and styles files for papers](/files/emnlp2020-templates.zip) are available for download**
 * **Authors can [submit their papers](https://www.softconf.com/emnlp2020/papers) using Softconf**
 * **Further details about the submission process are available in the [FAQ page](/blog/2020-05-01-submission-faqs-answered)**
@@ -20,8 +20,8 @@ The 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP 2
 
 ## Important Dates
 
-- [Anonymity period](#anonymity-period) begins: May 1, 2020
-- Submission deadline (long & short papers): June 1, 2020
+- [Anonymity period](#anonymity-period) begins: May 3, 2020
+- Submission deadline (long & short papers): June 3, 2020
 - Author response period: August 7-13, 2020
 - Notification of acceptance (long & short papers): September 14, 2020
 - Camera-ready papers due (long & short papers): October 5, 2020
@@ -98,9 +98,8 @@ For more information, see the [ACL Policies for Submission, Review, and Citation
 
 ### Multiple Submission Policy
 
-EMNLP 2020 will not consider any paper that is under review in a journal or another conference at the time of submission, and submitted papers must not be submitted elsewhere during the EMNLP 2020 review period. This policy covers all refereed and archival conferences and workshops (e.g., COLING, NeurIPS, ACL workshops). For example, a paper under review at an ACL workshop cannot be dual-submitted to EMNLP 2020. We make two exceptions to the above:
+EMNLP 2020 will not consider any paper that is under review in a journal or another conference at the time of submission, and submitted papers must not be submitted elsewhere during the EMNLP 2020 review period. This policy covers all refereed and archival conferences and workshops (e.g., COLING, NeurIPS, ACL workshops). For example, a paper under review at an ACL workshop cannot be dual-submitted to EMNLP 2020. We make an exception to the above:
  - papers can be dual-submitted to both EMNLP 2020 and an EMNLP workshop **which has its submission deadline falling after our original notification date of August 8, 2020**;
- - papers currently under review for ICML, whose decision notification date exactly matches our submission deadline. Accordingly, the review period does not overlap for the two conferences. You are welcome to submit to EMNLP, but we ask that should your paper be accepted to ICML, then you withdraw it immediately from EMNLP.
 
 In addition, we will not consider any paper that overlaps significantly in content or results with papers that will be (or have been) published elsewhere. Authors submitting more than one paper to EMNLP 2020 must ensure that their submissions do not overlap significantly (>25%) with each other in content or results.
 
