@@ -20,7 +20,7 @@ The 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP 2
 
 ## Important Dates
 
-- [Anonymity period](#anonymity-period) begins: May 3, 2020
+- [Anonymity period](#anonymity-period) begins: May 1, 2020
 - Submission deadline (long & short papers): June 3, 2020
 - Author response period: August 7-13, 2020
 - Notification of acceptance (long & short papers): September 14, 2020
