@@ -33,7 +33,7 @@ newsItems:
   - date: 2019-12-28
     text: "The [workshops listing](/workshops) now provides details of all 24 workshops"
 keyDates:
-  - date: 2020-05-03
+  - date: 2020-05-01
     event: "[Anonymity period](/call-for-papers#anonymity-period) begins"
   - date: 2020-06-03
     event: Submission deadline (long and short papers)
