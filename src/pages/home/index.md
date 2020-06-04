@@ -10,6 +10,8 @@ seo:
     The 2020 Conference on Empirical Methods in Natural Language Processing
   title: EMNLP 2020
 newsItems:
+  - date: 2020-06-04
+    text: "While the extended deadline is now closing, we are happy to offer case-by-case 48 hour extensions to researchers affected by the power outages due to Nisagra cyclone in India. Please email [Program Chairs](mailto:emnlp2020programmechairs@gmail.com) with your updated or late submission and an explanation of your circumstance."
   - date: 2020-06-01
     text: "The submission deadline has been pushed back 48 hours (now June 3rd) to allow people affected by recent civil unrest and Covid19-related lockdowns some additional time to finalise their papers."
   - date: 2020-05-15
