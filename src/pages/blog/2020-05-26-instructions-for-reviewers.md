@@ -113,9 +113,8 @@ submission).
 
 **3. Confidential Information:** Your answers to questions in this
 section will not be shared with the authors. Here we ask you about the
-recommended presentation type (oral vs. poster), recommendation for
-awards, any ethical concerns, and confidential comments to the area
-chairs and/or PC chairs.
+recommendation for awards, any ethical concerns, and confidential comments 
+to the area chairs and/or PC chairs.
 
 For Best Paper Award, please be open minded and feel free to nominate
 good quality papers even though they may not be the typical types. These
