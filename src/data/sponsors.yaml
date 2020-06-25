@@ -3,7 +3,7 @@
     - name: Bloomberg Engineering
       link: https://www.bloomberg.com/company/engineering/
     - name: Google
-      link: https://google.com
+      link: https://research.google
     - name: Apple
       link: https://apple.com
     - name: Amazon
@@ -16,7 +16,7 @@
       link: https://megagon.ai
     - name: Facebook
       link: https://facebook.com
-    - name: Deep Mind
+    - name: DeepMind
       link: https://deepmind.com
 - levelName: Silver
   sponsors:
@@ -30,3 +30,7 @@
   sponsors:
     - name: ISI
       link: https://www.isi.edu/
+- levelName: "Diversity and Inclusion: Champion"
+  sponsors:
+    - name: DeepMind
+      link: https://deepmind.com
