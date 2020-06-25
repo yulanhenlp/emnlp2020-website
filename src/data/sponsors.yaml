@@ -14,10 +14,18 @@
       link: https://baidu.com
     - name: Megagon Labs
       link: https://megagon.ai
+    - name: Facebook
+      link: https://facebook.com
+    - name: Deep Mind
+      link: https://deepmind.com
 - levelName: Silver
   sponsors:
     - name: Babelscape
       link: https://babelscape.com/
+    - name: Naver Labs Europe
+      link: https://www.naverlabs.com
+    - name: Adobe
+      link: https://adobe.com
 - levelName: Bronze
   sponsors:
     - name: ISI
