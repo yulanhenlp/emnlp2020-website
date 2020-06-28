@@ -172,7 +172,7 @@ Earth). Please note that there is a reviewer discussion period from
 August 14 to 24 after the author response.
 Your duties are listed below. Don't leave reviewing to the last minute!
 
--   June 26 – July 30: Review Period
+-   June 29 – July 30: Review Period
 -   August 7 – 13: Author response period
 -   August 14 – 20: Reviewer discussion period
 
