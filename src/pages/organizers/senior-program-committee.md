@@ -96,7 +96,7 @@ SAC: [Mohit Bansal](http://www.cs.unc.edu/~mbansal/), [Reza
 Haffari](https://research.monash.edu/en/persons/reza-haffari), [Yulia Tsvetkov](https://www.cs.cmu.edu/~ytsvetko/)
 
 ACs: Wray Buntine, Kai-Wei Chang, Colin Cherry, Shay Cohen, Kevin Duh,
-Sarvnaz Karimi, Andre Martins, Massimo Piccardi, Colin Raffel, Sebastian
+Sarvnaz Karimi, Karen Livescu, Andre Martins, Massimo Piccardi, Colin Raffel, Sebastian
 Ruder, Rachel Rudinger, Sasha Rush, Shashank Srivastava, Pontus Stenetorp, Emma Strubell,
 Jun Suzuki, Kristina Toutanova, Adam Trischler, Dani
 Yogatama
