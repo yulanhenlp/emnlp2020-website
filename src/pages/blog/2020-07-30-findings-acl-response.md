@@ -36,6 +36,8 @@ Overall, Findings should not detract from the quality of work presented at the w
 
 We are not planning to do so. If the schedule & technology permits, we might be able to allow for some form of short presentation, like the “poster boaster” and “one minute madness” sessions run in previous conferences. But we’re not committing to anything just now.
 
+<p>&nbsp;</p>
+
 ACL has just run a survey on reviewing, which included questions on Findings/Archives. This feedback wasn’t referenced in the above post. The ACL reviewing committee is in the process of working through this feedback, and will await the outcomes of the EMNLP trial before taking further actions on Findings/ACL Archive. 
 
 After the EMNLP trial is complete, we will have a better idea of the community’s view. As it stands, we are not sure if this will be a one-off, or continue as part of future conferences, as originally planned.
