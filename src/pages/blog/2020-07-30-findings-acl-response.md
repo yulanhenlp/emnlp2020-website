@@ -2,6 +2,10 @@
 templateKey: blog-post-page
 title: "Findings of EMNLP: Responding to ACL feedback"
 date: 2020-07-30
+seo:
+  title: "Findings of EMNLP response"
+  description: >- 
+    The new sister publication, “Findings of ACL: EMNLP 2020” will serve as an online companion publication for papers that are not accepted for publication in the main conference. Here we answer several concerns and criticisms raised in the recent ACL 2020 review meeting.
 ---
 
 The ACL 2020 reviewing meeting featured a lively discussion of the proposed changes to reviewing for ACL affiliated conferences. Thanks to all who participated for your questions and comments! 
