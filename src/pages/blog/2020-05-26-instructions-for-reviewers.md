@@ -25,7 +25,7 @@ participants in and content of discussion on submissions, are
 ## The Review Form
 
 We adapted the review form from [ACL
-2020](https://acl2020.org/reviewers/). The review form consists of three
+2020](https://acl2020.org/reviewers/). The [review form](../../../static/files/EMNLP2020-Review-Form.pdf) consists of three
 main sections.
 
 **1. In-Depth Review:** This section is for you to give your overall
