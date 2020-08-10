@@ -5,6 +5,8 @@ date: 2020-05-26
 updated:
   - date: 2020-06-19
     details: Removed reference to poster presentations
+  - date: 2020-08-10
+    details: Added link to review form
 seo:
   title: "Instructions for Reviewers for EMNLP 2020"
   description: >- 
@@ -25,7 +27,7 @@ participants in and content of discussion on submissions, are
 ## The Review Form
 
 We adapted the review form from [ACL
-2020](https://acl2020.org/reviewers/). The review form consists of three
+2020](https://acl2020.org/reviewers/). The [review form](/files/EMNLP2020-Review-Form.pdf) consists of three
 main sections.
 
 **1. In-Depth Review:** This section is for you to give your overall
